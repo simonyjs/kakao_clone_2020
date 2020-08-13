@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      /* 태그에 표시할때는 a 
+     id에 표시할때는 #a
+     class에 표실할때는 .a
+     하이퍼링크 element state(상태)는 a:hover
+     transition 속성은 반드시 처음생겨난 곳 즉 root or element 속성에 추가해야한다
+     transition은 element가 변하는 state(상태)를 지정해준것만 변한다 즉 hover에 변하지 않는 state가 있으면 적용이 안된다
+     tranform은 inline box에는 영향을 미치지 못함 원래자리에 있다고 생각하고 겹칠 수 있음
+     animation 생성은 @keyframes 이름 {
+
+     }
+     이후 해당 스타일에서 animation으로 부로오면 됨
+     설정 후 해당 스타일에 가서 animation: 이름 시간...;으로 적용한다.
+     from to 또는 백분율로 스텝을 설정가능함
+     */
+      @keyframes flipIcon {
+        from {
+          transform: rotateX(0);
+        }
+        to {
+          transform: rotateY(180deg) translateY(100px);
+        }
+      }
+      @keyframes flipIconSmooth {
+        0% {
+          transform: rotateX(0);
+        }
+        50% {
+          transform: rotateY(180deg) translateY(100px);
+        }
+        100% {
+          transform: rotateX(0);
+        }
+      }
+      a {
+        color: white;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 50px;
+        transition: background-color 2s ease-in-out, color 1s ease-in-out,
+          font-size 2s ease-in-out;
+      }
+      a:hover {
+        color: tomato;
+        background-color: white;
+        font-size: 100px;
+      }
+      img {
+        border-radius: 50%;
+        border: 10px solid black;
+        transition: all 1s ease-in-out;
+      }
+      img:hover {
+        transform: translateX(300px) rotateZ(360deg) scale(1.2);
+      }
+      #flipIcon {
+        width: 200px;
+        height: 200px;
+        background-color: chocolate;
+        animation: flipIcon 2s infinite;
+      }
+      h2 {
+        text-align: center;
+        line-height: 200px;
+      }
+      #flipIconSmooth {
+        width: 200px;
+        height: 200px;
+        background-color: chocolate;
+        animation: flipIconSmooth 4s infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">Go Home</a>
+    <img src="img/icon.png" />
+    <span>sdfafasdfasfafadfasf</span>
+    <div id="flipIcon">
+      <h2>56</h2>
+    </div>
+    <div id="flipIconSmooth">
+      <h2>56</h2>
+    </div>
+  </body>
+</html>

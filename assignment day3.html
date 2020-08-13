@@ -1,0 +1,89 @@
+<head>
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    h1 {
+      color: blue;
+      font-size: 50px;
+    }
+  </style>
+  <link
+    rel="shortcut icon"
+    href="https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico"
+  />
+  <meta charset="UTF-8" />
+  <meta name="description" content="This is my Website" />
+  <title>My First Website!</title>
+</head>
+<body>
+  <header>
+    <h1>Hello!!</h1>
+    <p>I like a <sub>apple</sub>.</p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ea
+      optio harum explicabo veniam error animi. Dolore earum aut sint, facilis
+      quam vitae repellendus corrupti fuga velit fugiat vel neque.
+    </p>
+  </header>
+
+  <main>
+    <h1>Create Account</h1>
+<!--HTML <form> 요소는 정보를 제출하기 위한 대화형 컨트롤을 포함하는 문서 구획을 나타냅니다.
+HTML <label> 요소는 사용자 인터페이스 항목의 설명을 나타냅니다.
+  <label> 을 <input> 요소와 연관시키려면, <input> 에 id 속성을 넣어야합니다. 그런 다음 <label> 에 id 와 같은 값의  for 속성을 넣어야합니다. 
+HTML <input> 요소는 웹 기반 양식에서 사용자의 데이터를 받을 수 있는 대화형 컨트롤을 생성합니다. 사용자 에이전트에 따라서 다양한 종류의 입력 데이터 유형과 컨트롤 위젯이 존재합니다. 입력 유형과 특성의 다양한 조합 가능성으로 인해, <input> 요소는 HTML에서 제일 강력하고 복잡한 요소 중 하나입니다.
+  https://developer.mozilla.org/ko/docs/Web/HTML/Element/input
+  required 특성 타입을 사류ㅕ보고 코드 작성해야한다
+*/ -->
+    <form>
+      <div>
+        <label for="firstName">First Name</label>
+        <input id="firstName" required placeholder="First Name" type="text" />
+      </div>
+      <div>
+        <label for="lasttName">Last Name</label>
+        <input id="lasttName" required placeholder="Last Name" type="text" />
+      </div>
+      <div>
+        <label for="eMail">Email</label>
+        <input id="eMail" required placeholder="Email" type="email">
+      </div>
+      <div>
+        <label for="userName">Username</label>
+        <input id="userName" required placeholder="ID" type="text">
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input id="password" required placeholder="Password" minlength="10" type="password">
+      </div>
+      <div> 
+        <label for="birthDate">Birth Date</label>
+        <input id="birthDate" required pattern="\d{4}-\d{2}-\d{2}" type="date">
+      </div>
+      <div>
+        <label for="howHappyAreYou">How happy aer you?</label>
+        <input id="howHappyAreYou" required type="range" list="tick">
+          <datalist id="tick">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+          </datalist>
+      </div>
+      <div>
+        <label for="whatisYourFavColor">What is your fav. color?</label>
+        <input id="whatisYourFavColor" required type="color">
+      </div>
+          <input type="submit" value="Create Account" />
+      </div>
+    </form>
+  </main>
+  <footer>&copy : 2020. Simon<img src="img/icon.png" /></footer>
+</body>
+</html>
