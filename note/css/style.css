@@ -1,0 +1,30 @@
+body {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-box {
+  width: 400px;
+  height: 400px;
+  background-color: #f5deb3;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-box div {
+  background-color: #018080;
+  height: 100px;
+  border: 2px white;
+}
+.main-box div:nth-child(odd) {
+  width: 100px;
+  border-style: solid;
+}
+.main-box div:nth-child(2) {
+  width: 350px;
+  border-style: dashed;
+}
