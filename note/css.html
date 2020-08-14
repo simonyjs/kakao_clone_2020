@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Lesseon</title>
+    <style>
+      /*
+                  반드시 head 안에 스타일 태그가 와야함
+                  아니면 파일로 분리시켜서 이것이 추천하는 방법임
+                  <link rel="styles.css">
+                  태그에 표시할때는 selector를 a
+                    id에 표시할때는 #a
+                    class에 표실할때는 .a
+                  이후 반드시 curly brackets{} 안에 속성과 값을 지정해주어함
+                  속성 property는 color:
+                  값 value는 빈드시 콜론 되에 표시하고 세미콜론;으로 닫아주어야 함
+
+                  하이퍼링크 element Pseudo Selectors 또는 state(상태)는 a:hover
+
+                  CSS는 말 그대로 cascading 층계 타입임 그래서 최종값만 출력이 된다
+
+                    margin 적용 두개값이면 순서대로 상하 좌우 적용값이 4개이면 위 우 하 좌 즉 시계방향으로 적용됨
+                    collapsing margin은 여백값이 같을때 일어남 즉 wired
+
+                    selector를 *으로 지정하면 전체를 바꿀 수 있음 즉 * {}
+
+            inline 마진은 좌우에만 적용됨
+
+            display를 통해 div을 inline-block으로 바꿀 수 있음
+            그러면 마진도 가질 수 있고 옆으로 다른 요소들을 가질 수 도 있음
+            단 임의의 마진이 만들어지고 정해진 형식이 없어서 까다로움
+
+            그래서 유연하게 적용하기위해 flexbox라는 개념이 나오게됨
+            적용은 직전 DIRECT 부모 엘리먼트에서 명령해야 자식 속성으로 인정이 된다
+            즉 부모 엘리먼트를 flex containner로 지정해야함 아주 중요함!!!!
+            display: flex;
+            flex main axis는 X축임 당연히 cross는 Y축임
+            만약에 flex 방향을 바꾸면 축 방향도 반대로 바뀐다
+            flex-direction: column; (row가 기본값이다)
+            colimn-reverse를 하면 박스의 순서도 123에서 321로 바뀐다
+
+            position fixed는 화면에 보이는 자리에 계속 고정이 된다.
+            위치는 margin을 무시하고 정해진 위치에 top: left: right: bottom:
+
+           position relative는 element가 처음 위치한 곳의 기준으로 수정함
+          위치는 top: left: right: bottom:
+
+      position absolute는 relative 부모를 기준으로 수정함
+      즉 상위 태그에 position: relative가 선언되지 않으면 body를 기준으로 움직이고
+      relative가 있으면 부모로 인식하고 기준이 된다
+
+      position static은 기본값이다
+
+      Pseudo Selectors
+      div:nth-child() { }
+      div:nth-visited { }
+
+      Pseudo element들은 :(콜론)이 2개인 게 특징
+      :: placeholder placeholder의 특성만 바꾸고 싶을 때
+      :: selection 클릭해서 긁을 때(1:58) 발생
+      :: first-letter 첫 글자에만 적용
+      ::first-line 첫 줄에만 작용
+
+      Combinators
+      부모 자식 형제로 보고 스타일을 지정할 수 있다
+      <div>
+       <p>
+        <span>
+        </span>
+        <p>
+        <p>
+       </p>
+       <div>
+        <span>
+        </span>
+        <adress>
+        <adress>
+        <p>
+        </p>
+       </div>
+      </div>
+      p가 부모이고 span이 자식이면
+      p span{ }
+      div가 부모이고 span 이 direct 자식이면
+      p > span{}
+      동등한 위치에 있고 바로 뒤에 따라나오는 형제는
+      span + p {}
+      동등한 위치에 있으나 바로 위티에 관계없이 형제는
+      span ~ p {}
+
+      Attribute Selector
+      attribute를 직접 선택해서 지정할 수 있다 input [type="text"] { }
+      placeholer가 name이라는 단어포함 하는 모든것을 바꾸고 싶으면 ~ 사용한다 input [placeholder~="name"] { }
+      a[href*="example"] href가 example을 포함
+      a[href$=".org"] href가 .org로 끝남
+      [attr|=value] value이거나 value로 시작
+
+      rgba
+      rgb 와 동일하지만 a가 포함된 형태 'a(alpha)'는 투명도
+      0(투명)~1(불투명) 사이의 값으로 조절
+
+      
+      CSS Custom Property 반드시 root에 선언되어야 함
+     :root {
+  --var-name: value;
+}
+      :root {
+          --main-color : blue;
+          --default-border: 1px solid var(--main-color);
+      }
+      value를 var(--default-border)로 불러올 수 있음 border: var(--default-border);
+
+                   */
+      :root {
+        --main-color: rgba(50, 52, 177, 0.719);
+      }
+      * {
+        border: 10px dashed;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        /* flex-direction: column; */
+        justify-content: space-between;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(0, 255, 255, 0.5);
+        background-color: #ff2600;
+        width: 200px;
+        height: 200px;
+        padding: 5px 10px;
+        border: 3px solid;
+        border-radius: 20px;
+        font-size: 50px;
+        /* display: inline; */
+      }
+      div:nth-child(2n + 1) {
+        background-color: darkgreen;
+      }
+      #first {
+        border-color: black;
+        position: fixed;
+        bottom: 10px;
+      }
+      #second {
+        border-color: var(--main-color);
+      }
+      #third {
+        border-color: crimson;
+      }
+      span {
+        color: tomato;
+        background-color: black;
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div는 box처럼 옆에 아무것도 올 수 없음 즉 block
+        box는 margin padding border의 속성을 가질 수 있음
+      span은 inline으로 가능함 
+      inline은 width와 height를 가질 수 없음
+    단 display 속성을 바꿔서 바꾸어줄 수 있음-->
+    <div id="first">1</div>
+    <div id="second">2</div>
+    <div id="third">3</div>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <form>
+      <input type="text" placeholder="ID" required />
+      <input type="password" placeholder="PW" required />
+    </form>
+  </body>
+</html>
