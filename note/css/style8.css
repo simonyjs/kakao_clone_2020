@@ -1,0 +1,70 @@
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  background-color: #6ABCBE;
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__box {
+ display: flex;
+ justify-content: space-between;
+ width: 25%;
+ margin: 50px;
+}
+.main__box:first-child {
+animation: rotateCircle 1s ease-in-out infinite;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+.rectangle {
+  width: 10px;
+  height: 30px;
+  background-color: white;
+  animation: bigSize 1s ease infinite;
+}
+.rectangle:nth-child(2){
+  animation-delay: 0.1s;
+}
+.rectangle:nth-child(3){
+  animation-delay: 0.2s;
+}
+.rectangle:nth-child(4){
+  animation-delay: 0.3s;
+}
+.rectangle:nth-child(5){
+  animation-delay: 0.4s;
+}
+@keyframes rotateCircle {
+  from {
+transform: rotate(0);
+  }
+  to {
+transform: rotate(180deg);
+  }
+}
+
+@keyframes bigSize {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(3);
+  }
+  50% {
+    transform: none;
+  }
+}
