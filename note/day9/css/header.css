@@ -1,0 +1,21 @@
+.playlist {
+  /* background-color: aqua; */
+  height: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.playlist__column {
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+.playlist__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.playlist__column span {
+  font-size: 20pt;
+  font-weight: 700;
+}

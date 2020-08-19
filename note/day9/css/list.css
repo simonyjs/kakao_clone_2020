@@ -1,0 +1,43 @@
+.play-list__picture {
+  width: 55px;
+  height: 55px;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+.play-list__row {
+  margin-bottom: 55px;
+  display: flex;
+  /* background-color: green; */
+}
+.play-list__row:last-child {
+  margin-bottom: 0px;
+}
+.play-list__column {
+  display: flex;
+  flex-direction: column;
+  /* background-color: rosybrown; */
+  margin-right: 15px;
+  justify-content: space-around;
+}
+.play-list__title {
+  font-size: 20pt;
+  font-weight: 600;
+}
+.play-list__writer {
+  font-size: 10pt;
+  color: gray;
+}
+
+.first-px {
+  background-color: tomato;
+}
+.second-px {
+  background-color: pink;
+}
+.third-px {
+  background-color: #1947e4;
+}
+.fourth-px {
+  background-color: #01c6ac;
+}

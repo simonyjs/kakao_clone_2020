@@ -1,0 +1,14 @@
+@import "reset-css.css";
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap");
+@import "header.css";
+@import "main.css";
+@import "list.css";
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+#bg-border {
+  border: 5px solid #01c6ac;
+  padding: 50px 30px;
+}
