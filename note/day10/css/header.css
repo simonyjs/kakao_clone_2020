@@ -15,7 +15,9 @@
   font-size: 20px;
   /* margin: 0px 10px; */
 }
-
+.library__column__center {
+  font-weight: 500;
+}
 .library-search__column {
   margin-right: 10px;
   position: absolute;

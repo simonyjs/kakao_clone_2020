@@ -1,0 +1,24 @@
+.pop-author {
+  /* background-color: teal; */
+}
+.pop__row,
+.pop__info {
+  margin-left: 30px;
+}
+.pop__info {
+  margin-top: 20px;
+  display: flex;
+}
+.pop__info img {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 20px;
+}
+.pop__desc {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,72 @@
+.today {
+  width: 100vw;
+  height: 320px;
+  padding: 60px 30px;
+  margin-bottom: 0px;
+}
+.today__row:last-child {
+  margin-top: 30px;
+}
+.today__column img {
+  width: 110px;
+  height: 160px;
+  border-radius: 10px;
+}
+.today__row {
+  display: flex;
+}
+
+.book-right {
+  margin-left: 15px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-info {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.today__info-row__fav i:nth-child(-n + 4) {
+  color: var(--yellow);
+}
+.today__info-row__fav i:nth-child(5) {
+  color: var(--grey);
+}
+.book-section {
+  margin-top: 20px;
+}
+.book-section span {
+  background-color: var(--grey);
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.book-bookmark {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+.book-bookmark div:first-child {
+  width: 35px;
+  height: 35px;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.book-bookmark div:last-child {
+  width: 100px;
+  height: 35px;
+  background-color: var(--black);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+}
