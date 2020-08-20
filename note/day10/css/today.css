@@ -27,20 +27,19 @@
 
 .book-info {
   width: 100%;
-  height: 50%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+/* 
 .today__info-row__fav i:nth-child(-n + 4) {
   color: var(--yellow);
 }
 .today__info-row__fav i:nth-child(5) {
   color: var(--grey);
-}
-.book-section {
-  margin-top: 20px;
-}
+} */
+
 .book-section span {
   background-color: var(--grey);
   padding: 5px 10px;

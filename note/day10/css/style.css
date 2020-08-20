@@ -6,12 +6,13 @@
 @import "bestseller.css";
 @import "pop.css";
 @import "media-screen.css";
+@import "star.css";
 
 * {
   box-sizing: border-box;
 }
 body {
-  height: 500vh;
+  /* height: 500vh; */
   font-family: "Noto Sans KR", sans-serif;
 }
 h1 {

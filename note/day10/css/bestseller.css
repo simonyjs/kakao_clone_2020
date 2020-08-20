@@ -8,10 +8,10 @@
   margin-bottom: 20px;
 }
 .bestseller__row:last-child {
-  width: 100%;
+  width: 93%;
   padding-bottom: 30px;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
 }
 .bestseller__column {
   margin-right: 25px;
@@ -26,6 +26,7 @@
   display: flex;
   justify-content: space-around;
 }
+/* 
 .bestseller__info-fav i {
   font-size: 5px;
 }
@@ -34,4 +35,4 @@
 }
 .bestseller__info-fav i:nth-child(5) {
   color: var(--grey);
-}
+} */
