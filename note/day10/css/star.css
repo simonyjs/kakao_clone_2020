@@ -3,7 +3,7 @@
 }
 .star-rating,
 .star-rating span {
-  display: inline-block;
+  display: flex;
   height: 15px;
   overflow: hidden;
   background: url(star2.png) no-repeat;
