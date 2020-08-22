@@ -1,0 +1,33 @@
+.music-player {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.music-player__column {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.music-player__column:nth-child(1) {
+  width: 60%;
+}
+.music-player__column:nth-child(2) {
+  width: 40%;
+}
+
+.now-playing__title h5 {
+  font-size: 10pt;
+  font-weight: 600;
+}
+.music-player__column:last-child {
+  flex-direction: row;
+  align-items: center;
+}
+.music-player__column .control__pause i {
+  font-size: 200%;
+}

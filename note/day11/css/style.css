@@ -1,0 +1,64 @@
+@import "reset.css";
+@import "font.css";
+@import "var.css";
+@import "header.css";
+@import "info.css";
+@import "list.css";
+@import "player.css";
+@import "main-info.css";
+@import "main-player.css";
+@import "media-screen.css";
+
+* {
+  box-sizing: border-box;
+}
+.bg-div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.music-left,
+.music-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 95%;
+  width: 45%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  /* background-color: khaki; */
+  box-shadow: 5px 5px 10px gray;
+}
+.music-header {
+  width: 100%;
+  height: 5%;
+  /* background-color: lawngreen; */
+}
+.music-info {
+  width: 100%;
+  height: 40%;
+  /* background-color: lemonchiffon; */
+}
+.music-list {
+  width: 100%;
+  height: 45%;
+  /* background-color: white; */
+}
+.music-player {
+  width: 100%;
+  height: 80px;
+  background-color: var(--black);
+}
+.music-main__info {
+  width: 100%;
+  height: 65%;
+  /* background-color: lemonchiffon; */
+}
+.music-main__player {
+  width: 100%;
+  height: 30%;
+  /* background-color: lightblue; */
+}
