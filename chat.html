@@ -9,14 +9,21 @@
   <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__row">
-        <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+        <span>SKT</span>
+        <i class="fas fa-signal"></i>
+      </div>
+      <div class="status-bar__row time_box">
+        <span class="txt_lg" id="hours"></span>
+        <span class="mark">:</span>
+        <span class="txt_lg" id="min"></span>
+        <span class="mark02">'</span>
+        <span class="txt_sm" id="sec"></span>
       </div>
       <div class="status-bar__row">
-        <span>18:45</span>
-      </div>
-      <div class="status-bar__row">
-        <i class="fas fa-lock"></i>
+        <img
+          src="https://img.icons8.com/material-sharp/20/000000/lock-orientation.png"
+        />
+        <img src="https://img.icons8.com/ios-filled/20/000000/wifi.png" />
         <span>100%</span>
         <i class="fas fa-battery-full fa-lg"></i>
         <i class="fas fa-bolt"></i>
@@ -87,5 +94,6 @@
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/current-time.js"></script>
   </body>
 </html>

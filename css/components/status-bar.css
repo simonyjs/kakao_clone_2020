@@ -12,16 +12,24 @@
 .status-bar__row:first-child span {
   margin-right: 5px;
 }
-.status-bar__row:nth-child(2) {
+.time_box {
   display: flex;
   justify-content: center;
 }
+
+.txt_sm {
+  font-size: 0.5rem;
+  align-items: center;
+}
+
 .status-bar__row:last-child {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 5px;
 }
-.status-bar__row:last-child .fa-lock,
+.status-bar__row:last-child img,
+.status-bar__row:last-child span,
 .status-bar__row:last-child .fa-battery-full {
-  margin: 0px 5px;
+  margin-right: 5px;
 }

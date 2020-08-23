@@ -37,22 +37,31 @@ block--modifier
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to CageTalk</h1>
-      <p class="welcome-header__text">
-        If you have a Cage Account, log in with your email or phone number.
+    <a href="javascript:history.back()">
+      <div class="back-page"><i class="fas fa-chevron-left"></i> Back</div>
+    </a>
+    <header class="signup-header">
+      <h1 class="signup-header__title">Sign-up started!</h1>
+      <p class="signup-header__text">
+        Any service provided by Cage Corporation, including Cage, Caum, and
+        Tomato can be accessed via your Cage Account.
       </p>
     </header>
-    <!-- form에 action과 method추가 각각 이름도 설정 get은 post에 비해 보안에 취약하지만 url을 쉽게 알아보기 위해 설정했다 -->
-    <form action="friends.html" method="get" class="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Cage Account or Password</a>
+
+    <form action="#" method="get" class="sign-up-form">
+      <p class="signup-header__text">
+        Do you have an email address to use with your Cage Account?
+      </p>
+      <input type="submit" value="I have an email account." />
     </form>
-    <form action="signup.html" method="get" class="login-form">
-      <input type="submit" value="Sign Up" />
+    <form action="#" method="get" class="sign-up-form new-email">
+      <input type="submit" value="I need a new email account." />
+      <p class="signup-header__text">
+        If you already have a Caum ID, please log into Caum and then convert it
+        into a Cage Account.
+      </p>
+
+      <a href="#">Log in to Caum</a>
     </form>
 
     <div id="no-mobile">
