@@ -5,7 +5,7 @@
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 15px;
-  margin-top: -15px;
+  margin-top: 110px;
 }
 
 #friends-display-link i {
@@ -16,6 +16,9 @@
   padding: 0px var(--horizontal-space);
 }
 
+.chats-screen__column {
+  margin-top: 125px;
+}
 .friends-screen__channel,
 .friends-screen__list {
   margin-top: 25px;
@@ -45,6 +48,7 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
+  z-index: 20;
   top: 0;
   display: flex;
   justify-content: center;
@@ -69,4 +73,11 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
+}
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
 }

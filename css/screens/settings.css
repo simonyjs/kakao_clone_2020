@@ -16,3 +16,11 @@
 .settings__setting-column:last-child {
   opacity: 0.5;
 }
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}

@@ -17,14 +17,19 @@
 }
 @keyframes notificationAnimation {
   0% {
-    transform: none;
+    transform: scale(0.8);
   }
   50% {
-    transform: translateY(-5px) rotateY(360deg);
+    transform: translateY(-5px) scale(1.2);
   }
   100% {
-    transform: none;
+    transform: scale(0.8);
   }
+}
+.nav__notification-more {
+  position: absolute;
+  right: 0px;
+  top: -15px;
 }
 .nav__notification {
   position: absolute;

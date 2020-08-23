@@ -118,3 +118,14 @@
   will-change: transform;
   animation: heartBeat 1s linear infinite;
 }
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+.main-screen {
+  margin-top: 125px;
+}
