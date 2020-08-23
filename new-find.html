@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find-Cage Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="fixed-header">
+      <div class="status-bar">
+        <div class="status-bar__row">
+          <span>SKT</span>
+          <i class="fas fa-signal"></i>
+        </div>
+        <div class="status-bar__row time_box">
+          <span class="txt_lg" id="hours"></span>
+          <span class="mark">:</span>
+          <span class="txt_lg" id="min"></span>
+          <span class="txt_sm" id="sec"></span>
+        </div>
+        <div class="status-bar__row">
+          <img
+            src="https://img.icons8.com/material-sharp/20/000000/lock-orientation.png"
+          />
+          <img src="https://img.icons8.com/ios-filled/20/000000/wifi.png" />
+          <span>100%</span>
+          <i class="fas fa-battery-full fa-lg"></i>
+          <i class="fas fa-bolt"></i>
+        </div>
+      </div>
+      <header class="screen-header">
+        <h1 class="screen-header__title">#COVID-19</h1>
+        <h1 class="screen-header__title">뉴스</h1>
+        <h1 class="screen-header__title">공연</h1>
+        <h1 class="screen-header__title">연예</h1>
+      </header>
+    </div>
+    <div class="main-screen">
+      <div class="new-find__row">
+        <div class="new-find__row-sub covid-level">
+          <span class="new-find__row-sub__column">위기경보</span
+          ><span class="new-find__row-sub__column">심각</span>
+        </div>
+        <div class="new-find__row-sub covid-title">코로나바이러스감염증-19</div>
+        <div class="new-find__row-sub covid-chkin">
+          <i class="fas fa-qrcode"></i>QR 체크인
+        </div>
+        <div class="new-find__row-sub covid-time">05.23 00:00 기준</div>
+      </div>
+      <div class="new-find__row">
+        <div class="new-find__row__row">
+          <div class="new-find__row__row-column">
+            <div class="covid-status__row">확진환자</div>
+            <div class="covid-status__row covid-number__confirm">17,339</div>
+            <div class="covid-status__row">
+              <i class="fas fa-caret-up"></i>397
+            </div>
+          </div>
+          <div class="new-find__row__row-column">
+            <div class="covid-status__row">격리해제</div>
+            <div class="covid-status__row covid-number__cancel">14,200</div>
+            <div class="covid-status__row">
+              <i class="fas fa-caret-up"></i>31
+            </div>
+          </div>
+          <div class="new-find__row__row-column">
+            <div class="covid-status__row">사망자</div>
+            <div class="covid-status__row covid-number__death">309</div>
+            <div class="covid-status__row">
+              <i class="fas fa-caret-up"></i>1
+            </div>
+          </div>
+          <div class="new-find__row__row-column">
+            <div class="covid-status__row">검사진행</div>
+            <div class="covid-status__row covid-number__progress">47,564</div>
+            <div class="covid-status__row">
+              <i class="fas fa-caret-up"></i>5,137
+            </div>
+          </div>
+        </div>
+        <div class="new-find__row__row">
+          <div class="new-find__row__row-column">
+            서울 | 확진 2,889
+          </div>
+          <div class="new-find__row__row-column">
+            완치 1,639
+          </div>
+          <div class="new-find__row__row-column">
+            사망 16
+          </div>
+        </div>
+      </div>
+      <div class="new-find__row"></div>
+    </div>
+    <!-- <main class="main-screen">
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to Openchat Home <i class="fas fa-chevron-right fa-xs"></i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">#BTS</h5>
+            <h6 class="open-post__hashtags">#bts#army#friends</h6>
+            <div class="open-post__members">
+              <img
+                src="https://avatars2.githubusercontent.com/u/68684223?s=460&u=10119e46dd856248c515471aab3780c2c0660f1d&v=4"
+              />
+              <span class="open-post__member-count">802 members</span>
+              <div class="divider"></div>
+              <span class="open-post__member-status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://avatars2.githubusercontent.com/u/68684223?s=460&u=10119e46dd856248c515471aab3780c2c0660f1d&v=47"
+              />
+              <div class="open-post__heart-count">
+                <i class="fas fa-heart fa-xs"></i><span>326</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main> -->
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">99</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-hashtag fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification-more more"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="check-size__big">
+      <div><h1>브라우저 화면이 너무 커요! 크기를 줄여주세요.</h1></div>
+      <div><h2>Browser screen is too BIG! Please reduce the size.</h2></div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/current-time.js"></script>
+  </body>
+</html>

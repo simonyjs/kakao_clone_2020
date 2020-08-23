@@ -47,8 +47,19 @@ block--modifier
     </header>
     <!-- form에 action과 method추가 각각 이름도 설정 get은 post에 비해 보안에 취약하지만 url을 쉽게 알아보기 위해 설정했다 -->
     <form action="friends.html" method="get" class="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        name="password"
+        required
+        minlength="6"
+        type="password"
+        placeholder="Password"
+      />
       <input type="submit" value="Log In" />
       <a href="#">Find Cage Account or Password</a>
     </form>
